@@ -7,7 +7,6 @@ This is backend support of Vocabulary Central website with collection of all API
 
 ## Table of Contents
 * [Introduction](https://github.com/shivam584/Vocabulary-Central#introduction)
-* [Screenshots](https://github.com/shivam584/Vocabulary-Central#screenshots)
 * [How to access](https://github.com/shivam584/Vocabulary-Central#How-to-access)
 * [Features](https://github.com/shivam584/Vocabulary-Central#-features)
 * [Technologies and tools used](https://github.com/shivam584/Vocabulary-Central#technologies-and-tools-used)
