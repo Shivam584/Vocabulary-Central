@@ -20,7 +20,7 @@ This is RESTAPI endpoints of articles and accounts
 # How to access
  But as a developer you might be interested to work on it or see it running in your local system. For that just have to clone this repository by
 
-        git clone https://shivam584.github.io/Vocabulary-Central/
+        git clone https://github.com/Shivam584/Vocabulary-Central.git
         
 ## Install requirements
 
