@@ -10,7 +10,7 @@ from rest_framework.permissions import IsAuthenticated,IsAdminUser
 
 class chatroomGetChat(APIView):
     renderer_classes=[UserRenderer]
-    # permission_classes=[IsAuthenticated]
+    permission_classes=[IsAuthenticated]
     def get(self,request,groupname,lang):
             try:
                 groupobj=group.objects.get(groupname=groupname)
@@ -34,7 +34,7 @@ class chatroomGetChat(APIView):
         
 class chatroomPostChat(APIView):
     renderer_classes=[UserRenderer]
-    # permission_classes=[IsAuthenticated]
+    permission_classes=[IsAuthenticated]
     def post(self,request):
         parsed_data=request.data
         serializerd=chatSerializer(data=parsed_data)
@@ -52,7 +52,7 @@ class chatroomPostChat(APIView):
 
 class chatroomJoinGroup(APIView):
     renderer_classes=[UserRenderer]
-    # permission_classes=[IsAuthenticated]
+    permission_classes=[IsAuthenticated]
     def post(self,request):
         parsed_data=request.data
         serializerd=groupSerializer(data=parsed_data)
@@ -65,7 +65,7 @@ class chatroomJoinGroup(APIView):
 
 class chatroomGetGroupList(APIView):
     renderer_classes=[UserRenderer]
-    # permission_classes=[IsAuthenticated]
+    permission_classes=[IsAuthenticated]
     def get(self,request):
         list_of_groups=group.objects.all()
         list_of_groups=groupSerializer(list_of_groups,many=True)
