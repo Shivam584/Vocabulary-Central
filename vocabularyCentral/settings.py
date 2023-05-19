@@ -39,7 +39,9 @@ AUTH_USER_MODEL='accounts.User'
 INSTALLED_APPS = [
     'accounts',
     'corsheaders',
+    'chatroom',
     'articles',
+    'django_extensions',
     'rest_framework',
     'gdstorage',
     'django.contrib.admin',
@@ -181,4 +183,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
 ]
 
-PASSWORD_RESET_TIMEOUT=900
+PASSWORD_RESET_TIMEOUT=1800
+
+GRAPH_MODELS ={
+'all_applications': True,
+'graph_models': True,
+}
